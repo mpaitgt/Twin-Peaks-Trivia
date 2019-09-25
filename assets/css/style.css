@@ -1,0 +1,164 @@
+body {
+    background-color: #282928;
+    color: #96c49a;
+}
+
+#site-container {
+    width: 45%;
+    margin: 0px auto;
+    text-align: center;
+    font-family: 'Contrail One', cursive; 
+    font-size: 50px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('https://media.giphy.com/media/3ov9jDsNt8lDsoa8ZG/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.cycle {
+    animation: cycle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cycle {
+    0% {box-shadow: 0px 0px 213px 55px rgb(90, 202, 86, 0.6);};
+    50% {box-shadow: 0px 0px 213px 55px rgba(169, 226, 167, 0.8);};
+    100% {box-shadow: 0px 0px 213px 55px rgb(90, 202, 86, 0.6);};
+}
+
+.clock {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+#site-title {
+    font-size: 24px;
+    font-family: 'Bungee Inline', cursive; 
+    font-size: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#message {
+    font-family: 'Bungee Inline', cursive; 
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#seconds {
+    font-size: 32px;
+}
+
+#by-line {
+    font-size: 36px;
+}
+
+button {
+    font-family: 'Contrail One', cursive; font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #282928;
+    border: none;
+}
+
+input[type=radio] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+#confirm {
+    font-size: 16px;
+}
+
+.test {
+    color: #5aca56;
+}
+
+button:hover {
+    color: #457950;
+    background-color: #2e4d30;
+}
+
+button:focus {
+    outline: none;
+}
+
+#start-btn {
+    margin-top: 200px;
+    font-size: 42px;
+    padding: 20px 50px;
+    background-color: #c7c7c7;
+    opacity: 0.4;
+    
+}
+
+#submit-btn {
+    display: none;
+    margin-top: 40px;
+    font-size: 32px;
+    padding: 25px 50px;
+    border: none;
+    background-color: #c7c7c7;
+}
+
+/* question css */
+#question-box {
+    display: none;
+    position: relative;
+    bottom: 0;
+}
+
+#question {
+    margin: 50px 0px 20px 0px;
+    font-size: 32px;
+}
+
+.option {
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-shadow: 0px 0px 15px #1f1f1f;
+}
+
+.option:hover {
+    color: #5da759;
+    text-shadow: 0px 0px 30px 30px #000000;
+}
+
+.option:active {
+    color: #2e752b;
+    color: #5aca56;
+}
+
+#results {
+    font-family: 'Bungee Inline', cursive; 
+    color: #5aca56;
+    font-weight: bold;
+    font-size: 62px;
+    margin: 150px 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#end-screen {
+    display: none;
+    font-size: 50px;
+    color: inherit;
+    margin-top: 100px;
+}
+
+.question-counter p, .question-counter {
+    font-family: 'Contrail One', cursive; 
+    font-size: 32px;
+    text-align: center;
+    margin-top: 22px;
+}
+
