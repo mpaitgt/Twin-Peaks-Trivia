@@ -128,6 +128,7 @@ var myQuestions = [                 // question object
 window.onload = function() {
 
     startBtn.addEventListener('click', function() {     // event listener for the start button to begin the game
+        console.log(counter);
         container.classList.add('cycle');
         randomQuestionGenerator();
         startBtn.style.display = 'none';
@@ -145,6 +146,7 @@ window.onload = function() {
     });
 
     submitBtn.addEventListener('click', function() {    // user submits their answer
+        
         if (submitButtonCheck === false) {
             submitFunction(userGuess);
             myQuestions.splice(randomIndex, 1);
@@ -218,18 +220,17 @@ function count() {        // 15 second timer for the each question
     seconds--;
     secondsSpan.innerText = seconds;
     
-    if (seconds === 0) {
+    if (seconds === 0 && counter === 1) {
+        questionBox.style.display = 'none';
+        submitBtn.style.display = 'none';
+        secondsSpan.style.display = 'none';
+        scoreKeeping(userScore);
+
+    } else if (seconds === 0) {
         seconds = 16;
         counter--;
         myQuestions.splice(randomIndex, 1);
         nextQuestionFunction();
-    
-    } else if (seconds === 1 && counter === 1) {
-        questionBox.style.display = 'none';
-        submitBtn.style.display = 'none';
-        secondsSpan.style.display = 'none';
-        document.getElementById('end-screen').style.display = 'block';
-        scoreKeeping(userScore);
     }
 }
 
