@@ -211,6 +211,7 @@ function nextQuestionFunction() {   // function used when the button is moving o
         removeResults.parentNode.removeChild(removeResults);
        
     } else if (counter === 0) {
+        document.getElementById('results').style.display = 'none';
         scoreKeeping(userScore);
         clearInterval(timer);
     }
@@ -237,7 +238,6 @@ function count() {        // 15 second timer for the each question
 function scoreKeeping(x) {      // updates the score of the game
     var grade = x / 10;
     var percentage = (grade.toFixed(2) * 100) + '%';
-    document.getElementById('results').style.display = 'none';
     var finalElem = document.createElement('h1');
     finalElem.id = 'results';
     var finalText = document.createTextNode('you scored ' + percentage);
