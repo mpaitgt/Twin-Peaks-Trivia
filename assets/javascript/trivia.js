@@ -128,7 +128,6 @@ var myQuestions = [                 // question object
 window.onload = function() {
 
     startBtn.addEventListener('click', function() {     // event listener for the start button to begin the game
-        console.log(counter);
         container.classList.add('cycle');
         randomQuestionGenerator();
         startBtn.style.display = 'none';
