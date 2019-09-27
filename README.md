@@ -6,7 +6,7 @@ This is a Twin Peaks-themed trivia game. Twin Peaks was a popular show in the 19
 
 ## Link to the live game
 ![Twin Peaks Trivia](https://mpaitgt.github.io/Twin-Peaks-Trivia/)
-![](trivia-gif.gif)
+![](trivia2.gif)
 
 
 ## Technologies Used
