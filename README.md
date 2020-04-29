@@ -4,8 +4,8 @@
 This is a Twin Peaks-themed trivia game. Twin Peaks was a popular show in the 1990's created by David Lynch and Mark Frost. It was brought back by Showtime in 2017 for one extended season.
 
 
-## Link to the live game
-[Twin Peaks Trivia](https://mpaitgt.github.io/Twin-Peaks-Trivia/)
+## [Link to the live game](https://mpaitgt.github.io/Twin-Peaks-Trivia/)
+
 ![](trivia2.gif)
 
 
